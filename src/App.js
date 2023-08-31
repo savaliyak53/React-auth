@@ -1,5 +1,16 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Registration from "./containers/registration";
+
 function App() {
-  return <div className="text-red-600 text-3xl">Learn React</div>;
+  return (
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/registration" element={<Registration />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
 }
 
 export default App;
