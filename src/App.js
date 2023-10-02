@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Registration from "./containers/registration";
+import CustomInput from "./containers/customInput";
 
 function App() {
   return (
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/registration" element={<Registration />} />
+          <Route path="/registration" element={<CustomInput />} />
         </Routes>
       </BrowserRouter>
     </div>
